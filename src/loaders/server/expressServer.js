@@ -14,13 +14,14 @@ const swaggerUi = require('swagger-ui-express');
         this.userBasePath = `${config.api.prefix}/users`
 
         this._middlewares();
+        this._swaggerConfig();
+
 
         this._routes();
 
         this._notFound();
         this._errorHandler();
 
-        //this._swaggerConfig();
 
     }
 
